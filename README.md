@@ -13,16 +13,16 @@ The architecture of this repository follows modern Python Packaging (PyPA) guide
 
 ---
 
-## 🧩 Core Open-Source Libraries
+## Core Open-Source Libraries
 
 The magic of our ecosystem is powered by two robust, open-source libraries we developed. Feel free to explore and use them:
 
-- 🌌 **[Alenia Zenith](https://github.com/Kaia-Alenia/alenia-zenith)**: The visual foundation. Handles beautiful, high-performance UI rendering and graphical integrations.
-- ⚡ **[Alenia Nerve](https://github.com/Kaia-Alenia/alenia-nerve)**: The brain of our IPC (Inter-Process Communication). Enables real-time, low-latency socket communication between standalone tools.
+- **[Alenia Zenith](https://github.com/Kaia-Alenia/alenia-zenith)**: The visual foundation. Handles beautiful, high-performance UI rendering and graphical integrations.
+- **[Alenia Nerve](https://github.com/Kaia-Alenia/alenia-nerve)**: The brain of our IPC (Inter-Process Communication). Enables real-time, low-latency socket communication between standalone tools.
 
 ---
 
-## 🛠️ Suite Tools
+## Suite Tools
 
 Our suite consists of minimalist, high-performance tools developed in Python and natively compiled.
 
@@ -39,7 +39,16 @@ Our suite consists of minimalist, high-performance tools developed in Python and
 
 ---
 
-## 🧠 Nerve: The Intercommunication Bridge
+## Nerve: The Intercommunication Bridge
+
+```text
+    .--. .--.
+   /    \    \
+  |  .--. .-- |
+  | (    \    )
+   \ `---'`--'
+    `--'
+```
 
 The true magic behind the Alenia suite is **Nerve**, an Inter-Process Communication (IPC) protocol living at the core of our local `alenia-bridge` library.
 
@@ -58,7 +67,7 @@ The entire creation process becomes a frictionless ecosystem, completely removin
 
 ---
 
-## 🏗️ Architecture & Compilation
+## Architecture & Compilation
 
 The project uses a **local editable install** system to share clean logic, and native automated packaging via Nuitka.
 

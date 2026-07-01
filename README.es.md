@@ -13,16 +13,16 @@ La arquitectura de este repositorio ha sido estructurada siguiendo las directric
 
 ---
 
-## 🧩 Librerías Core Open-Source
+## Librerías Core Open-Source
 
 La magia de nuestro ecosistema es impulsada por dos robustas librerías open-source que hemos desarrollado. Siéntete libre de explorarlas y utilizarlas:
 
-- 🌌 **[Alenia Zenith](https://github.com/Kaia-Alenia/alenia-zenith)**: La base visual. Maneja componentes de UI modernos, integraciones gráficas y de alto rendimiento.
-- ⚡ **[Alenia Nerve](https://github.com/Kaia-Alenia/alenia-nerve)**: El cerebro de nuestro IPC. Permite una comunicación ultra rápida de baja latencia por sockets entre herramientas independientes.
+- **[Alenia Zenith](https://github.com/Kaia-Alenia/alenia-zenith)**: La base visual. Maneja componentes de UI modernos, integraciones gráficas y de alto rendimiento.
+- **[Alenia Nerve](https://github.com/Kaia-Alenia/alenia-nerve)**: El cerebro de nuestro IPC. Permite una comunicación ultra rápida de baja latencia por sockets entre herramientas independientes.
 
 ---
 
-## 🛠️ Herramientas de la Suite
+## Herramientas de la Suite
 
 Nuestra suite está compuesta por herramientas minimalistas y de alto rendimiento desarrolladas en Python y compiladas nativamente. 
 
@@ -39,7 +39,16 @@ Nuestra suite está compuesta por herramientas minimalistas y de alto rendimient
 
 ---
 
-## 🧠 Nerve: El puente de Intercomunicación
+## Nerve: El puente de Intercomunicación
+
+```text
+    .--. .--.
+   /    \    \
+  |  .--. .-- |
+  | (    \    )
+   \ `---'`--'
+    `--'
+```
 
 La verdadera magia detrás de la suite de Alenia es **Nerve**, un protocolo de comunicación entre procesos (IPC) que vive en el corazón de nuestra librería local `alenia-bridge`. 
 
@@ -58,7 +67,7 @@ Todo el proceso de creación se vuelve un ecosistema sin interrupciones ni arras
 
 ---
 
-## 🏗️ Arquitectura y Compilación
+## Arquitectura y Compilación
 
 El proyecto utiliza un sistema de **instalaciones editables local** para compartir lógica limpia, y empaquetamiento automatizado nativo vía Nuitka.
 
