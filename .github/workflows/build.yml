@@ -48,29 +48,17 @@ jobs:
       - name: Build with Nuitka (Ubuntu)
         if: runner.os == 'Linux'
         run: |
-          if [ "${{ matrix.tool }}" == "giftly" ]; then
-            python3 -m nuitka --onefile --include-package=alenia_bridge --include-package=gi --include-data-dir=src=src --include-data-dir=assets=src/assets --output-filename=${{ matrix.tool }}.bin src/main.py
-          else
-            python3 -m nuitka --onefile --include-package=alenia_bridge --include-package=gi --output-filename=${{ matrix.tool }}.bin src/main.py
-          fi
+          python3 -m nuitka --onefile --include-package=alenia_bridge --include-package=gi --output-filename=${{ matrix.tool }}.bin src/main.py
 
       - name: Build with Nuitka (Windows)
         if: runner.os == 'Windows'
         run: |
-          if ("${{ matrix.tool }}" -eq "giftly") {
-            python -m nuitka --onefile --include-package=alenia_bridge --assume-yes-for-downloads --windows-console-mode=disable --include-data-dir=src=src --include-data-dir=assets=assets --windows-icon-from-ico=assets/app_icon.ico --output-filename=${{ matrix.tool }}.exe src/main.py
-          } else {
-            python -m nuitka --onefile --include-package=alenia_bridge --assume-yes-for-downloads --windows-console-mode=disable --output-filename=${{ matrix.tool }}.exe src/main.py
-          }
+          python -m nuitka --onefile --include-package=alenia_bridge --assume-yes-for-downloads --windows-console-mode=disable --output-filename=${{ matrix.tool }}.exe src/main.py
 
       - name: Build with Nuitka (macOS)
         if: runner.os == 'macOS'
         run: |
-          if [ "${{ matrix.tool }}" == "giftly" ]; then
-            python -m nuitka --mode=app --include-package=alenia_bridge --include-data-dir=src=src --include-data-dir=assets=assets --macos-app-icon=assets/app_icon.ico --output-filename=${{ matrix.tool }} src/main.py
-          else
-            python -m nuitka --mode=app --include-package=alenia_bridge --output-filename=${{ matrix.tool }} src/main.py
-          fi
+          python -m nuitka --mode=app --include-package=alenia_bridge --output-filename=${{ matrix.tool }} src/main.py
 
       - name: Package build (Ubuntu)
         if: runner.os == 'Linux'
