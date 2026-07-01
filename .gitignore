@@ -7,7 +7,6 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-.Python
 build/
 develop-eggs/
 dist/
@@ -26,24 +25,25 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Virtual environments
-venv/
+# Nuitka
+*.build/
+*.dist/
+*.bin
+*.exe
+*.app
+nuitka-crash-report.xml
+
+# Environments
+.env
+.venv
 env/
+venv/
 ENV/
 env.bak/
 venv.bak/
 
-# Environment variables
-.env
-.venv
-
-# IDEs
+# VS Code
 .vscode/
-.idea/
-*.swp
-*.swo
 
-# Project specific
-Preview/
-framegrid_export/
-giftly_export/
+# Zenith / Alenia
+.zenith_cache.json

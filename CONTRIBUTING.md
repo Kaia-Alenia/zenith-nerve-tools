@@ -1,4 +1,4 @@
-# Contributing to Framegrid
+# Contributing to Alenia Apps
 
 We welcome contributions! Please adhere to the Code of Conduct and ensure all pull requests follow our guidelines.
 

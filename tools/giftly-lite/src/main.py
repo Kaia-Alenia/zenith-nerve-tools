@@ -2,6 +2,7 @@
 
 from PIL import Image
 Image.init()
+import sys, os
 from alenia_bridge.integration import init_zenith, NerveBridge
 init_zenith(__file__)
 
@@ -25,7 +26,7 @@ except ImportError:
 
 
 
-CURRENT_VERSION = "v1.7.0"
+CURRENT_VERSION = "v1.1"
 
 def resource_path(relative_path):
     if hasattr(sys, "_MEIPASS"):
