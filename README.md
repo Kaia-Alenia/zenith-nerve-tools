@@ -8,6 +8,7 @@
 
 *Read this in other languages: [🇬🇧 English](README.md) | [🇪🇸 Español](README.es.md)*
 
+[![GitGem](https://gitgem.org/api/badge/github/Kaia-Alenia/zenith-nerve-tools.svg)](https://gitgem.org/github/Kaia-Alenia/zenith-nerve-tools)
 [![Build Status](https://github.com/Kaia-Alenia/zenith-nerve-tools/actions/workflows/build.yml/badge.svg)](https://github.com/Kaia-Alenia/zenith-nerve-tools/actions)
 [![GitHub Release](https://img.shields.io/github/v/release/Kaia-Alenia/zenith-nerve-tools?color=blue)](https://github.com/Kaia-Alenia/zenith-nerve-tools/releases)
 [![Downloads](https://img.shields.io/github/downloads/Kaia-Alenia/zenith-nerve-tools/total?color=blue)](https://github.com/Kaia-Alenia/zenith-nerve-tools/releases)
